@@ -1,0 +1,34 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: oedu-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8500/eureka
+    registry-fetch-interval-seconds: 10
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+
+zuul:
+  prefix: /api     # 添加路由前缀
+  retryable: true
+  routes:
+    oedu-um-service: /item/**
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread: timeoutInMillisecond:10000 #熔断时长10秒
+
+ribbon:
+  ConnectTimeout: 250
+  ReadTimeout: 2000
+  MaxAutoRetriesNextServer: 0
+  MaxAutoRetries: 0
+
+

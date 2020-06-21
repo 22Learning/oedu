@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65be9abd-fd97-4277-9ff4-44ddfa718d80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/terminal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/Contants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/result/ResultEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/tools/DateTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/tools/NumberTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-exam/oedu-exam-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-exam/oedu-exam-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-exam/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-registry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-registry/src/main/java/com/oedu/Registry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-registry/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-sc/oedu-sc-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-sc/oedu-sc-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-sc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-service/src/main/java/com/oedu/UmApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-um/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-zuul/src/main/java/com/oedu/Zuul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oedu.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\m2\repository" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="E:\m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectId" id="1aDH8I8B1bcJDN3aEyXTSAaouIa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zpp-item/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\zhupp\zpp-registry\src\main\java\com\zhupp" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://www.baidu.com" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;a&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://www.baidu.com" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;&quot;a&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://www.baidu.com" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.test#1">
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test1" />
+      <module name="oedu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/resources/test.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oedu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Test1" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.tset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oedu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Test1" />
+      <option name="METHOD_NAME" value="tset" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="oedu" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZppItemService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oedu-um-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oedu.UmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZppRegistry" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oedu-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oedu.Registry" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZppZuul" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oedu-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oedu.Zuul" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.test#1" />
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="JUnit.Test1" />
+        <item itemvalue="JUnit.Test1.tset" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65be9abd-fd97-4277-9ff4-44ddfa718d80" name="Default Changelist" comment="" />
+      <created>1586263083556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586263083556</updated>
+      <workItem from="1586263085946" duration="9665000" />
+      <workItem from="1586273367248" duration="5957000" />
+      <workItem from="1586358320513" duration="1273000" />
+      <workItem from="1587273894418" duration="4936000" />
+      <workItem from="1587803200593" duration="1311000" />
+      <workItem from="1587805029744" duration="15635000" />
+      <workItem from="1587912217367" duration="6088000" />
+      <workItem from="1590148724838" duration="297000" />
+      <workItem from="1590149105853" duration="1327000" />
+      <workItem from="1592579350140" duration="379000" />
+      <workItem from="1592579749434" duration="1007000" />
+      <workItem from="1592656502509" duration="906000" />
+      <workItem from="1592738227123" duration="2198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1592745091972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1592745091972" />
+    <state x="1032" y="190" key="#Project_Structure" timestamp="1592744475273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="190" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1592744475273" />
+    <state x="828" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586269042321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586269042321" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1590149394793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590149394793" />
+    <state x="514" y="113" key="CommitChangelistDialog2" timestamp="1592744547695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="514" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592744547695" />
+    <state x="1074" y="286" key="FileChooserDialogImpl" timestamp="1592744853986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1074" y="286" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592744853986" />
+    <state width="1132" height="215" key="GridCell.Tab.0.bottom" timestamp="1592579594407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1132" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592579594407" />
+    <state width="1132" height="215" key="GridCell.Tab.0.center" timestamp="1592579594407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1132" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592579594407" />
+    <state width="1132" height="215" key="GridCell.Tab.0.left" timestamp="1592579594407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1132" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592579594407" />
+    <state width="1132" height="215" key="GridCell.Tab.0.right" timestamp="1592579594407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1132" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592579594407" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1590152373262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590152373262" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1590152373262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590152373262" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1590152373262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590152373262" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1590152373262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590152373262" />
+    <state width="619" height="279" key="GridCell.Tab.2.bottom" timestamp="1586360186939">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586360186939" />
+    <state width="619" height="279" key="GridCell.Tab.2.center" timestamp="1586360186938">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586360186938" />
+    <state width="619" height="279" key="GridCell.Tab.2.left" timestamp="1586360186938">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586360186938" />
+    <state width="619" height="279" key="GridCell.Tab.2.right" timestamp="1586360186939">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586360186939" />
+    <state x="859" y="91" key="Maven.ArtifactSearchDialog" timestamp="1590148839919">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="91" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590148839919" />
+    <state x="600" y="217" key="NewModule_or_Project.wizard" timestamp="1592739621793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="600" y="217" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592739621793" />
+    <state x="505" y="178" key="SettingsEditor" timestamp="1592744908036">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="505" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592744908036" />
+    <state x="1116" y="256" width="647" height="534" key="find.popup" timestamp="1592741479449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1116" y="256" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592741479449" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1586278349917">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586278349917" />
+    <state x="396" y="193" key="new project wizard" timestamp="1592744058725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="396" y="193" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592744058725" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1592744572218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592744572218" />
+    <state x="1103" y="242" width="672" height="678" key="search.everywhere.popup" timestamp="1587277722734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="242" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587277722734" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test/Test1.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="collect" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

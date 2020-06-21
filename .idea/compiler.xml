@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oedu-registry" />
+        <module name="oedu-um-service" />
+        <module name="oedu-zuul" />
+        <module name="oedu-sc-service" />
+        <module name="oedu-sc-interface" />
+        <module name="oedu-common" />
+        <module name="oedu-um-interface" />
+        <module name="oedu-exam-interface" />
+        <module name="oedu-exam-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="oedu-common" options="-parameters" />
+      <module name="oedu-exam-interface" options="-parameters" />
+      <module name="oedu-exam-service" options="-parameters" />
+      <module name="oedu-registry" options="-parameters" />
+      <module name="oedu-sc" options="-parameters" />
+      <module name="oedu-sc-interface" options="-parameters" />
+      <module name="oedu-sc-service" options="-parameters" />
+      <module name="oedu-um-interface" options="-parameters" />
+      <module name="oedu-um-service" options="-parameters" />
+      <module name="oedu-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
