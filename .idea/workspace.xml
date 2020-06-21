@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65be9abd-fd97-4277-9ff4-44ddfa718d80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/terminal.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oedu-common/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/Contants.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/result/Result.java" afterDir="false" />
@@ -291,17 +284,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -357,10 +340,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590149394793" />
-    <state x="514" y="113" key="CommitChangelistDialog2" timestamp="1592744547695">
+    <state x="514" y="113" key="CommitChangelistDialog2" timestamp="1592745501738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="514" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592744547695" />
+    <state x="514" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592745501738" />
     <state x="1074" y="286" key="FileChooserDialogImpl" timestamp="1592744853986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
