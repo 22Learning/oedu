@@ -17,7 +17,9 @@ zuul:
   prefix: /api     # 添加路由前缀
   retryable: true
   routes:
-    oedu-um-service: /item/**
+    oedu-um-service: /um/**
+    oedu-sc-service: /sc/**
+    oedu-exam-service: /exam/**
 hystrix:
   command:
     default:
