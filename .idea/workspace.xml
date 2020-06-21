@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65be9abd-fd97-4277-9ff4-44ddfa718d80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/oedu-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/Contants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/result/ResultEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/tools/DateTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-common/src/main/java/com/oedu/common/tools/NumberTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-exam/oedu-exam-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-exam/oedu-exam-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-exam/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-registry/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-registry/src/main/java/com/oedu/Registry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-registry/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-sc/oedu-sc-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-sc/oedu-sc-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-sc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-service/src/main/java/com/oedu/UmApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-um/oedu-um-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-um/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-zuul/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-zuul/src/main/java/com/oedu/Zuul.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oedu.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="65be9abd-fd97-4277-9ff4-44ddfa718d80" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -316,13 +290,41 @@
       <workItem from="1592656502509" duration="906000" />
       <workItem from="1592738227123" duration="2198000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1592745537727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592745537727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1592745725548</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592745725548</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1592745091972">
@@ -345,10 +347,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590149394793" />
-    <state x="514" y="113" key="CommitChangelistDialog2" timestamp="1592745536984">
+    <state x="514" y="113" key="CommitChangelistDialog2" timestamp="1592745724821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="514" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592745536984" />
+    <state x="514" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592745724821" />
     <state x="1074" y="286" key="FileChooserDialogImpl" timestamp="1592744853986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -413,10 +415,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="505" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592744908036" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592745580825">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592745735280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592745580825" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592745735280" />
     <state x="1116" y="256" width="647" height="534" key="find.popup" timestamp="1592741479449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
