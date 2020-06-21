@@ -1,0 +1,15 @@
+server:
+  port: 8500
+spring:
+  application:
+    name: oedu-registry
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
