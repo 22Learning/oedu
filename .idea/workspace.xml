@@ -304,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592745725548</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1592746049701</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592746049701</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,10 +354,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590149394793" />
-    <state x="514" y="113" key="CommitChangelistDialog2" timestamp="1592745724821">
+    <state x="514" y="113" key="CommitChangelistDialog2" timestamp="1592746048941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="514" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592745724821" />
+    <state x="514" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592746048941" />
     <state x="1074" y="286" key="FileChooserDialogImpl" timestamp="1592744853986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -415,10 +422,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="505" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592744908036" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592745735280">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592746061287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592745735280" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592746061287" />
     <state x="1116" y="256" width="647" height="534" key="find.popup" timestamp="1592741479449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

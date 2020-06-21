@@ -12,7 +12,8 @@ HELP.md
 .sts4-cache
  
 ### IntelliJ IDEA ###
-/.idea/
+.idea
+.idea/workspace.xml
 *.iws
 *.iml
 *.ipr
