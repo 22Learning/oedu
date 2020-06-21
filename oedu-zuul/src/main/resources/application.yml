@@ -14,6 +14,11 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
 
 zuul:
+  reject:
+    url: http://www.oedu.com/um/user/login
+
+  filter:
+    path:/um/user/login@/um/user/register
   prefix: /api     # 添加路由前缀
   retryable: true
   routes:
@@ -32,5 +37,8 @@ ribbon:
   ReadTimeout: 2000
   MaxAutoRetriesNextServer: 0
   MaxAutoRetries: 0
+
+
+
 
 
