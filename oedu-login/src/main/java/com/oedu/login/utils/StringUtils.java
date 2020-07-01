@@ -4,15 +4,17 @@ import java.util.Collection;
 
 public class StringUtils {
     public static boolean isEmptyOrNull(String str){
-        if(null == str)
+        if(null == str) {
             return true;
+        }
 
         return str.trim().equals("") || str.trim().equalsIgnoreCase("null");
     }
 
     public static boolean isEmpty(Object obj){
-        if(null == obj)
+        if(null == obj) {
             return true;
+        }
         if(obj instanceof Collection){
             return ((Collection) obj).isEmpty();
         }

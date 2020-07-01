@@ -18,4 +18,7 @@
         id, nick_name, phone, real_name, is_enable, create_time, update_time
     </sql>
 
+    <select id="getOneUser" resultType="com.oedu.login.entities.User">
+        select * from user where phone = #{phone} and password = #{passwd}
+    </select>
 </mapper>

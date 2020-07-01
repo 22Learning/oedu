@@ -15,8 +15,9 @@ public class LoginService {
     UserMapper userMapper;
 
     public ResponseEntity<String> login(String phone,String passwd){
-        if(StringUtils.isEmptyOrNull(passwd))
+        if(StringUtils.isEmptyOrNull(passwd)) {
             return ResponseEntity.error("账号或密码错误");
+        }
 
         String encode = MD5Encoder.encode(passwd.getBytes());
         passwd = MD5Util.getMd5(passwd);
@@ -27,8 +28,9 @@ public class LoginService {
         if(null == user){
             return ResponseEntity.error("账号或密码错误");
         }
-        if(user.getIsEnable() == 0)
+        if(user.getIsEnable() == 0) {
             return ResponseEntity.error("账号已冻结");
+        }
 
         return ResponseEntity.success("登陆成功");
     }

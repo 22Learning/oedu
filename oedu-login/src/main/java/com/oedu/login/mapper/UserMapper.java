@@ -2,7 +2,6 @@ package com.oedu.login.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.oedu.login.entities.User;
-import org.apache.ibatis.annotations.Select;
 
 /**
  * <p>
@@ -14,6 +13,7 @@ import org.apache.ibatis.annotations.Select;
  */
 public interface UserMapper extends BaseMapper<User> {
 
-    @Select("select * from user where phone = #{phone} and password = #{passwd}")
+//    @Select("select * from user where phone = #{phone} and password = #{passwd}")
+    //新田君，老夫不用注解了
     User getOneUser(String phone,String passwd);
 }
