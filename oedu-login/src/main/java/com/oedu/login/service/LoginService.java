@@ -1,8 +1,8 @@
 package com.oedu.login.service;
 
-import com.oedu.login.entities.ResponseEntity;
-import com.oedu.login.entities.User;
-import com.oedu.login.mapper.UserMapper;
+import com.oedu.login.dto.ResponseEntity;
+import com.oedu.login.dto.User;
+import com.oedu.login.dao.UserMapper;
 import com.oedu.login.utils.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

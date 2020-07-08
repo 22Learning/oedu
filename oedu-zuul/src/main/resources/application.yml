@@ -18,7 +18,7 @@ zuul:
     url: http://www.oedu.com/um/user/login
 
   filter:
-    path:/um/user/login@/um/user/register
+    path: /**/user/login
   prefix: /api     # 添加路由前缀
   retryable: true
   routes:

@@ -1,4 +1,4 @@
-package com.oedu.login.entities;
+package com.oedu.login.dto;
 
 import org.springframework.context.annotation.PropertySource;
 

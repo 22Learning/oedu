@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_DECORATION_FILTER_ORDER;
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_TYPE;
@@ -52,7 +53,9 @@ public class OeduZuulFilter extends ZuulFilter {
         log.info("uri:{}", request.getRequestURI());
         //配置的url不拦截，其他接口都要拦截校验 token
         List<String> pathList = Arrays.asList(filterPath.split("@"));
-        if (pathList.contains(request.getRequestURI())) {
+        boolean flag = pathList.stream().anyMatch(path ->
+                Pattern.matches(path, request.getRequestURI()));
+        if (flag) {
             return false;
         }
         return true;

@@ -1,4 +1,4 @@
-package com.oedu.login.entities;
+package com.oedu.login.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

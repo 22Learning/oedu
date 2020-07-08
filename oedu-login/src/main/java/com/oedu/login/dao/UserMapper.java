@@ -1,7 +1,7 @@
-package com.oedu.login.mapper;
+package com.oedu.login.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.oedu.login.entities.User;
+import com.oedu.login.dto.User;
 
 /**
  * <p>

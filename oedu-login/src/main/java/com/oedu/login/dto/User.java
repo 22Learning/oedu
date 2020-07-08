@@ -1,4 +1,4 @@
-package com.oedu.login.entities;
+package com.oedu.login.dto;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

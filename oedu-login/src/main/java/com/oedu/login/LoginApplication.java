@@ -9,7 +9,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan("com.oedu.login.mapper")
+@MapperScan("com.oedu.login.**.dao")
 @EnableCaching
 @EnableScheduling
 public class LoginApplication {

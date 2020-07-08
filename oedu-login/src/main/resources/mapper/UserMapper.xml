@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.oedu.login.mapper.UserMapper">
+<mapper namespace="com.oedu.login.dao.UserMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.oedu.login.entities.User">
+    <resultMap id="BaseResultMap" type="com.oedu.login.dto.User">
         <id column="id" property="id" />
         <result column="nick_name" property="nickName" />
         <result column="phone" property="phone" />
@@ -18,7 +18,7 @@
         id, nick_name, phone, real_name, is_enable, create_time, update_time
     </sql>
 
-    <select id="getOneUser" resultType="com.oedu.login.entities.User">
+    <select id="getOneUser" resultType="com.oedu.login.dto.User">
         select * from user where phone = #{phone} and password = #{passwd}
     </select>
 </mapper>
