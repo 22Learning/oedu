@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oedu.sc.org.dao.OrgMapper">
+  <resultMap id="BaseResultMap" type="com.oedu.sc.org.po.Org">
+    <id column="oedu_org_id" jdbcType="BIGINT" property="oeduOrgId" />
+    <result column="org_name" jdbcType="VARCHAR" property="orgName" />
+    <result column="org_type" jdbcType="VARCHAR" property="orgType" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="parent_org_id" jdbcType="VARCHAR" property="parentOrgId" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    oedu_org_id, org_name, org_type, org_id, parent_org_id, `status`, update_time, update_user, 
+    create_time, create_user
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from oedu_org
+    where oedu_org_id = #{oeduOrgId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from oedu_org
+    where oedu_org_id = #{oeduOrgId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.oedu.sc.org.po.Org">
+    insert into oedu_org (oedu_org_id, org_name, org_type, 
+      org_id, parent_org_id, `status`, 
+      update_time, update_user, create_time, 
+      create_user)
+    values (#{oeduOrgId,jdbcType=BIGINT}, #{orgName,jdbcType=VARCHAR}, #{orgType,jdbcType=VARCHAR}, 
+      #{orgId,jdbcType=VARCHAR}, #{parentOrgId,jdbcType=VARCHAR}, #{status,jdbcType=TINYINT}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{createUser,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oedu.sc.org.po.Org">
+    insert into oedu_org
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oeduOrgId != null">
+        oedu_org_id,
+      </if>
+      <if test="orgName != null">
+        org_name,
+      </if>
+      <if test="orgType != null">
+        org_type,
+      </if>
+      <if test="orgId != null">
+        org_id,
+      </if>
+      <if test="parentOrgId != null">
+        parent_org_id,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oeduOrgId != null">
+        #{oeduOrgId,jdbcType=BIGINT},
+      </if>
+      <if test="orgName != null">
+        #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="orgType != null">
+        #{orgType,jdbcType=VARCHAR},
+      </if>
+      <if test="orgId != null">
+        #{orgId,jdbcType=VARCHAR},
+      </if>
+      <if test="parentOrgId != null">
+        #{parentOrgId,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oedu.sc.org.po.Org">
+    update oedu_org
+    <set>
+      <if test="orgName != null">
+        org_name = #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="orgType != null">
+        org_type = #{orgType,jdbcType=VARCHAR},
+      </if>
+      <if test="orgId != null">
+        org_id = #{orgId,jdbcType=VARCHAR},
+      </if>
+      <if test="parentOrgId != null">
+        parent_org_id = #{parentOrgId,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where oedu_org_id = #{oeduOrgId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oedu.sc.org.po.Org">
+    update oedu_org
+    set org_name = #{orgName,jdbcType=VARCHAR},
+      org_type = #{orgType,jdbcType=VARCHAR},
+      org_id = #{orgId,jdbcType=VARCHAR},
+      parent_org_id = #{parentOrgId,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=TINYINT},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      update_user = #{updateUser,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=VARCHAR}
+    where oedu_org_id = #{oeduOrgId,jdbcType=BIGINT}
+  </update>
+</mapper>

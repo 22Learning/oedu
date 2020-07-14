@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oedu.sc.map.dao.CodeDetailMapper">
+  <resultMap id="BaseResultMap" type="com.oedu.sc.map.po.CodeDetail">
+    <id column="oedu_code_detail_id" jdbcType="BIGINT" property="oeduCodeDetailId" />
+    <result column="code_type" jdbcType="VARCHAR" property="codeType" />
+    <result column="code_no" jdbcType="VARCHAR" property="codeNo" />
+    <result column="code_name" jdbcType="VARCHAR" property="codeName" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    oedu_code_detail_id, code_type, code_no, code_name, `status`, remark, update_time, 
+    update_user, create_time, create_user
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from oedu_code_detail
+    where oedu_code_detail_id = #{oeduCodeDetailId,jdbcType=BIGINT}
+  </select>
+    <select id="selectCodeDetailByType" resultType="com.oedu.sc.map.po.CodeDetail">
+      select * from oedu_code_detail where code_type=#{codeType,jdbcType=VARCHAR}
+      order by code_no
+    </select>
+    <select id="selectCodeDetailByTypeList" resultType="com.oedu.sc.map.po.CodeDetail">
+      select * from oedu_code_detail
+      where code_type in
+      <foreach collection="list" item="item" open="(" separator="," close=")">
+        #{item,jdbcType=VARCHAR}
+      </foreach>
+      order by code_no
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from oedu_code_detail
+    where oedu_code_detail_id = #{oeduCodeDetailId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.oedu.sc.map.po.CodeDetail">
+    insert into oedu_code_detail (oedu_code_detail_id, code_type, code_no, 
+      code_name, `status`, remark, 
+      update_time, update_user, create_time, 
+      create_user)
+    values (#{oeduCodeDetailId,jdbcType=BIGINT}, #{codeType,jdbcType=VARCHAR}, #{codeNo,jdbcType=VARCHAR}, 
+      #{codeName,jdbcType=VARCHAR}, #{status,jdbcType=TINYINT}, #{remark,jdbcType=VARCHAR}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{createUser,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oedu.sc.map.po.CodeDetail">
+    insert into oedu_code_detail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oeduCodeDetailId != null">
+        oedu_code_detail_id,
+      </if>
+      <if test="codeType != null">
+        code_type,
+      </if>
+      <if test="codeNo != null">
+        code_no,
+      </if>
+      <if test="codeName != null">
+        code_name,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oeduCodeDetailId != null">
+        #{oeduCodeDetailId,jdbcType=BIGINT},
+      </if>
+      <if test="codeType != null">
+        #{codeType,jdbcType=VARCHAR},
+      </if>
+      <if test="codeNo != null">
+        #{codeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="codeName != null">
+        #{codeName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oedu.sc.map.po.CodeDetail">
+    update oedu_code_detail
+    <set>
+      <if test="codeType != null">
+        code_type = #{codeType,jdbcType=VARCHAR},
+      </if>
+      <if test="codeNo != null">
+        code_no = #{codeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="codeName != null">
+        code_name = #{codeName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where oedu_code_detail_id = #{oeduCodeDetailId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oedu.sc.map.po.CodeDetail">
+    update oedu_code_detail
+    set code_type = #{codeType,jdbcType=VARCHAR},
+      code_no = #{codeNo,jdbcType=VARCHAR},
+      code_name = #{codeName,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=TINYINT},
+      remark = #{remark,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      update_user = #{updateUser,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=VARCHAR}
+    where oedu_code_detail_id = #{oeduCodeDetailId,jdbcType=BIGINT}
+  </update>
+</mapper>

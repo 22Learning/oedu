@@ -1,4 +1,4 @@
-package com.oedu;
+package com.oedu.zuul;
 
 
 import org.springframework.boot.SpringApplication;

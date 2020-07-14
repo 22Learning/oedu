@@ -1,0 +1,37 @@
+server:
+  port: 8725
+spring:
+  application:
+    name: oedu-sc
+  datasource:
+    password: oyq666333
+    username: root
+    url:jdbc: mysql://112.74.164.194:3306/oedu?useSSL=false&useUnicode=true&characterEncoding=utf8&useTimezone=true&serverTimezone=CTT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8500/eureka
+    registry-fetch-interval-seconds: 10
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread: timeoutInMillisecond:10000 #熔断时长10秒
+
+ribbon:
+  ConnectTimeout: 250
+  ReadTimeout: 2000
+  MaxAutoRetriesNextServer: 0
+  MaxAutoRetries: 0
+
+
+
+
+

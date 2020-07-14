@@ -21,4 +21,10 @@
     <select id="getOneUser" resultType="com.oedu.login.dto.User">
         select * from user where phone = #{phone} and password = #{passwd}
     </select>
+    <select id="selectUserbyId" resultType="com.oedu.login.dto.User">
+        select nick_name as nickName ,phone as phone from user where phone in
+        <foreach collection="list" item="item" open="(" separator="," close=")">
+            #{item,jdbcType=VARCHAR}
+        </foreach>
+    </select>
 </mapper>

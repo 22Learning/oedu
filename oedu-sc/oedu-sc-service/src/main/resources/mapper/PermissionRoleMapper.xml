@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oedu.sc.permission.dao.PermissionRoleMapper">
+  <resultMap id="BaseResultMap" type="com.oedu.sc.permission.po.PermissionRole">
+    <id column="oedu_permission_role_id" jdbcType="BIGINT" property="oeduPermissionRoleId" />
+    <result column="role_id" jdbcType="VARCHAR" property="roleId" />
+    <result column="permission_id" jdbcType="VARCHAR" property="permissionId" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="update_time" jdbcType="VARCHAR" property="updateTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    oedu_permission_role_id, role_id, permission_id, `status`, update_time, update_user, 
+    create_time, create_user
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from oedu_permission_role
+    where oedu_permission_role_id = #{oeduPermissionRoleId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from oedu_permission_role
+    where oedu_permission_role_id = #{oeduPermissionRoleId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.oedu.sc.permission.po.PermissionRole">
+    insert into oedu_permission_role (oedu_permission_role_id, role_id, permission_id, 
+      `status`, update_time, update_user, 
+      create_time, create_user)
+    values (#{oeduPermissionRoleId,jdbcType=BIGINT}, #{roleId,jdbcType=VARCHAR}, #{permissionId,jdbcType=VARCHAR}, 
+      #{status,jdbcType=TINYINT}, #{updateTime,jdbcType=VARCHAR}, #{updateUser,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=VARCHAR}, #{createUser,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oedu.sc.permission.po.PermissionRole">
+    insert into oedu_permission_role
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oeduPermissionRoleId != null">
+        oedu_permission_role_id,
+      </if>
+      <if test="roleId != null">
+        role_id,
+      </if>
+      <if test="permissionId != null">
+        permission_id,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oeduPermissionRoleId != null">
+        #{oeduPermissionRoleId,jdbcType=BIGINT},
+      </if>
+      <if test="roleId != null">
+        #{roleId,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionId != null">
+        #{permissionId,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oedu.sc.permission.po.PermissionRole">
+    update oedu_permission_role
+    <set>
+      <if test="roleId != null">
+        role_id = #{roleId,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionId != null">
+        permission_id = #{permissionId,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where oedu_permission_role_id = #{oeduPermissionRoleId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oedu.sc.permission.po.PermissionRole">
+    update oedu_permission_role
+    set role_id = #{roleId,jdbcType=VARCHAR},
+      permission_id = #{permissionId,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=TINYINT},
+      update_time = #{updateTime,jdbcType=VARCHAR},
+      update_user = #{updateUser,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=VARCHAR},
+      create_user = #{createUser,jdbcType=VARCHAR}
+    where oedu_permission_role_id = #{oeduPermissionRoleId,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <springProperty scope="context" name="logPath" source="logging.path"/>
+    <springProperty scope="context" name="logLevel" source="logging.level.root"/>
+    <!--<springProperty scope="context" name="logLevelMybaties" source="logging.level.mybaties"/>-->
+    <conversionRule conversionWord="msg" converterClass="com.yylending.lcrm.tmk.common.log.SensitiveDataConverter"></conversionRule>
+
+    <!-- 控制台输出 -->
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}|%thread|%-5level|%X{requestId}| %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 按照每天生成日志文件 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${logPath}/oedu-sc/oedu-sc_%d{yyyy-MM-dd}_${HOST_NAME}.%i.log.zip</FileNamePattern>
+            <MaxHistory>9999</MaxHistory>
+            <!--日志文件最大的大小-->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>1GB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}|%thread|%-5level|%X{requestId}| %logger{50} - %msg%n</pattern>
+        </encoder>
+
+    </appender>
+    <logger name="com.apache.ibatis" level="TRACE"/>
+    <logger name="java.sql.Connection" level="DEBUG"/>
+    <logger name="java.sql.Statement" level="DEBUG"/>
+    <logger name="java.sql.PreparedStatement" level="DEBUG"/>
+
+    <root level="%{logLevel}">
+
+        <appender-ref ref="STDOUT"/>
+
+        <appender-ref ref="FILE"/>
+    </root>
+    <!--<logger name="com.oedu.sc.*.dao" level="${logLevelMybaties}"></logger>-->
+</configuration>

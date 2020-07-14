@@ -30,4 +30,12 @@ public class StringUtils {
     public static boolean isNotEmpty(Object obj){
         return !isEmpty(obj);
     }
+
+    public static boolean equals(String a, String b) {
+        return org.apache.commons.lang3.StringUtils.equals(a, b);
+    }
+
+    public static boolean equalsAny(String a, String... args) {
+        return org.apache.commons.lang3.StringUtils.equalsAny(a, args);
+    }
 }
