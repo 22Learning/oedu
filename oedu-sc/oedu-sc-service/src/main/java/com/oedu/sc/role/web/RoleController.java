@@ -1,5 +1,6 @@
 package com.oedu.sc.role.web;
 
+import com.oedu.common.entities.PageParamReq;
 import com.oedu.common.result.Result;
 import com.oedu.sc.role.dto.RoleReq;
 import com.oedu.sc.role.service.RoleInterface;
@@ -34,7 +35,7 @@ public class RoleController {
     }
 
     @PostMapping("list")
-    public Result getList() {
-        return new Result(roleInterface.getList());
+    public Result getList(@RequestBody PageParamReq req) {
+        return new Result(roleInterface.getList(req));
     }
 }

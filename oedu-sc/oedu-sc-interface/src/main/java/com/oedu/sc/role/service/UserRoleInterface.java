@@ -1,6 +1,5 @@
 package com.oedu.sc.role.service;
 
-import com.oedu.common.result.Result;
 import com.oedu.sc.role.dto.UserRoleDto;
 import com.oedu.sc.role.po.UserRole;
 import org.springframework.stereotype.Service;

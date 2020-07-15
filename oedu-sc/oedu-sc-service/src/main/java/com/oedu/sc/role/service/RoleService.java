@@ -1,6 +1,9 @@
 package com.oedu.sc.role.service;
 
+import com.github.pagehelper.PageHelper;
 import com.oedu.common.entities.LogicException;
+import com.oedu.common.entities.PageParamReq;
+import com.oedu.common.entities.PageParamRsp;
 import com.oedu.common.tools.StringUtils;
 import com.oedu.common.tools.UserUtil;
 import com.oedu.sc.map.dao.CodeDetailMapper;
@@ -52,7 +55,8 @@ public class RoleService implements RoleInterface {
     }
 
     @Override
-    public List<CodeDetail> getList() {
-        return codeDetailMapper.selectCodeDetailByType(CodeType.ROLE_ENUM);
+    public PageParamRsp<CodeDetail> getList(PageParamReq req) {
+        PageHelper.startPage(req.getPageNo(), req.getPageSize());
+        return new PageParamRsp(codeDetailMapper.selectCodeDetailByType(CodeType.ROLE_ENUM));
     }
 }

@@ -19,5 +19,5 @@ public interface PermissionMapper {
 
     int updateByPrimaryKey(Permission record);
 
-    List<Permission> selectList();
+    List<Permission> selectList(String status);
 }

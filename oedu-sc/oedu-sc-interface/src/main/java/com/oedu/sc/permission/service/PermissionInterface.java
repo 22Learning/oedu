@@ -14,5 +14,5 @@ public interface PermissionInterface {
 
     int update(Permission permission);
 
-    List<Permission> getList();
+    List<Permission> getList(String status);
 }

@@ -1,5 +1,7 @@
 package com.oedu.sc.role.service;
 
+import com.oedu.common.entities.PageParamReq;
+import com.oedu.common.entities.PageParamRsp;
 import com.oedu.sc.map.po.CodeDetail;
 import com.oedu.sc.role.dto.RoleReq;
 import org.springframework.stereotype.Service;
@@ -16,5 +18,5 @@ public interface RoleInterface {
 
     int updateRole(@RequestBody RoleReq req);
 
-    List<CodeDetail> getList();
+    PageParamRsp<CodeDetail>getList(PageParamReq req);
 }

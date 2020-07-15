@@ -33,8 +33,8 @@ public class PermissionController {
     }
 
     @PostMapping("list")
-    public Result getList() {
-        return new Result(permissionInterface.getList());
+    public Result getList(@RequestBody String status) {
+        return new Result(permissionInterface.getList(status));
     }
 
 }

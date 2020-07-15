@@ -1,5 +1,6 @@
 package com.oedu.sc.role.web;
 
+import com.oedu.common.entities.PageParamReq;
 import com.oedu.common.result.Result;
 import com.oedu.sc.role.po.UserRole;
 import com.oedu.sc.role.service.UserRoleInterface;

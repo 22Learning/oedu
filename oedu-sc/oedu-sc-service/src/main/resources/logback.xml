@@ -3,7 +3,7 @@
     <springProperty scope="context" name="logPath" source="logging.path"/>
     <springProperty scope="context" name="logLevel" source="logging.level.root"/>
     <!--<springProperty scope="context" name="logLevelMybaties" source="logging.level.mybaties"/>-->
-    <conversionRule conversionWord="msg" converterClass="com.oedu.sc.common.log.SensitiveDataConverter"></conversionRule>
+    <conversionRule conversionWord="msg" converterClass="com.oedu.sc.common.SensitiveDataConverter"></conversionRule>
 
     <!-- 控制台输出 -->
 

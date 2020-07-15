@@ -1,6 +1,9 @@
 package com.oedu.sc.role.service;
 
+import com.github.pagehelper.PageHelper;
 import com.oedu.common.entities.LogicException;
+import com.oedu.common.entities.PageParamReq;
+import com.oedu.common.entities.PageParamRsp;
 import com.oedu.common.tools.StringUtils;
 import com.oedu.common.tools.UserUtil;
 import com.oedu.sc.feign.service.UserFeignService;

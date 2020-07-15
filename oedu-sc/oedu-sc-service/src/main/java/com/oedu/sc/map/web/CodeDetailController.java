@@ -6,6 +6,7 @@ import com.oedu.sc.map.service.CodeDetailInterface;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,17 +26,17 @@ public class CodeDetailController {
      * @return
      */
     @PostMapping("add")
-    public Result add(CodeDetail codeDetail) {
+    public Result add(@RequestBody CodeDetail codeDetail) {
         return new Result(codeDetailInterface.add(codeDetail));
     }
 
     @PostMapping("delete")
-    public Result delete(CodeDetail codeDetail) {
+    public Result delete(@RequestBody CodeDetail codeDetail) {
         return new Result(codeDetailInterface.delete(codeDetail.getOeduCodeDetailId()));
     }
 
     @PostMapping("update")
-    public Result update(CodeDetail codeDetail) {
+    public Result update(@RequestBody CodeDetail codeDetail) {
         return new Result(codeDetailInterface.update(codeDetail));
     }
 
@@ -45,7 +46,7 @@ public class CodeDetailController {
      * @return
      */
     @PostMapping("list")
-    public Result getList(String codeType) {
+    public Result getList(@RequestBody String codeType) {
         return new Result(codeDetailInterface.getList(codeType));
     }
 
@@ -56,7 +57,7 @@ public class CodeDetailController {
      * @return
      */
     @PostMapping("codeDetail")
-    public Result getCodeDetail(List<String> codeTypes) {
+    public Result getCodeDetail(@RequestBody List<String> codeTypes) {
         return new Result(codeDetailInterface.getCodeDetail(codeTypes));
     }
 }

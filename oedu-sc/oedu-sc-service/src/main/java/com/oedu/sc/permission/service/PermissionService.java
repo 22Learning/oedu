@@ -46,8 +46,8 @@ public class PermissionService implements PermissionInterface {
     }
 
     @Override
-    public List<Permission> getList() {
-        return permissionMapper.selectList();
+    public List<Permission> getList(String status) {
+        return permissionMapper.selectList(status);
     }
 }
 
