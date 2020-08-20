@@ -1,6 +1,9 @@
 package com.oedu.sc.permission.po;
 
+import com.oedu.common.tools.UserUtil;
+
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * oedu_permission_role
@@ -24,11 +27,11 @@ public class PermissionRole implements Serializable {
      */
     private Byte status;
 
-    private String updateTime;
+    private Date updateTime;
 
     private String updateUser;
 
-    private String createTime;
+    private Date createTime;
 
     private String createUser;
 
@@ -66,11 +69,11 @@ public class PermissionRole implements Serializable {
         this.status = status;
     }
 
-    public String getUpdateTime() {
+    public Date getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(String updateTime) {
+    public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
 
@@ -82,11 +85,11 @@ public class PermissionRole implements Serializable {
         this.updateUser = updateUser;
     }
 
-    public String getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
@@ -152,5 +155,18 @@ public class PermissionRole implements Serializable {
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
+    }
+
+    public PermissionRole() {
+
+    }
+    public PermissionRole(String permissionId,String roleId) {
+        this.permissionId = permissionId;
+        this.roleId = roleId;
+        this.status = 1;
+        this.createTime = new Date();
+        this.createUser = UserUtil.getUserId();
+        this.updateTime = new Date();
+        this.updateUser = UserUtil.getUserId();
     }
 }

@@ -6,9 +6,9 @@
     <result column="role_id" jdbcType="VARCHAR" property="roleId" />
     <result column="permission_id" jdbcType="VARCHAR" property="permissionId" />
     <result column="status" jdbcType="TINYINT" property="status" />
-    <result column="update_time" jdbcType="VARCHAR" property="updateTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
     <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
-    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="create_user" jdbcType="VARCHAR" property="createUser" />
   </resultMap>
   <sql id="Base_Column_List">
@@ -30,8 +30,8 @@
       `status`, update_time, update_user, 
       create_time, create_user)
     values (#{oeduPermissionRoleId,jdbcType=BIGINT}, #{roleId,jdbcType=VARCHAR}, #{permissionId,jdbcType=VARCHAR}, 
-      #{status,jdbcType=TINYINT}, #{updateTime,jdbcType=VARCHAR}, #{updateUser,jdbcType=VARCHAR}, 
-      #{createTime,jdbcType=VARCHAR}, #{createUser,jdbcType=VARCHAR})
+      #{status,jdbcType=TINYINT}, #{updateTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.oedu.sc.permission.po.PermissionRole">
     insert into oedu_permission_role
@@ -75,20 +75,31 @@
         #{status,jdbcType=TINYINT},
       </if>
       <if test="updateTime != null">
-        #{updateTime,jdbcType=VARCHAR},
+        #{updateTime,jdbcType=TIMESTAMP},
       </if>
       <if test="updateUser != null">
         #{updateUser,jdbcType=VARCHAR},
       </if>
       <if test="createTime != null">
-        #{createTime,jdbcType=VARCHAR},
+        #{createTime,jdbcType=TIMESTAMP},
       </if>
       <if test="createUser != null">
         #{createUser,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.oedu.sc.permission.po.PermissionRole">
+    <insert id="insertBatch">
+       insert into oedu_permission_role (oedu_permission_role_id, role_id, permission_id,
+      `status`, update_time, update_user,
+      create_time, create_user)
+    values
+    <foreach collection="list" open="" separator="," close="" item="item" >
+      (#{item.oeduPermissionRoleId,jdbcType=BIGINT}, #{item.roleId,jdbcType=VARCHAR}, #{item.permissionId,jdbcType=VARCHAR},
+      #{item.status,jdbcType=TINYINT}, #{item.updateTime,jdbcType=TIMESTAMP}, #{item.updateUser,jdbcType=VARCHAR},
+      #{item.createTime,jdbcType=TIMESTAMP}, #{item.createUser,jdbcType=VARCHAR})
+    </foreach>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.oedu.sc.permission.po.PermissionRole">
     update oedu_permission_role
     <set>
       <if test="roleId != null">
@@ -101,13 +112,13 @@
         `status` = #{status,jdbcType=TINYINT},
       </if>
       <if test="updateTime != null">
-        update_time = #{updateTime,jdbcType=VARCHAR},
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
       </if>
       <if test="updateUser != null">
         update_user = #{updateUser,jdbcType=VARCHAR},
       </if>
       <if test="createTime != null">
-        create_time = #{createTime,jdbcType=VARCHAR},
+        create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
       <if test="createUser != null">
         create_user = #{createUser,jdbcType=VARCHAR},
@@ -120,9 +131,9 @@
     set role_id = #{roleId,jdbcType=VARCHAR},
       permission_id = #{permissionId,jdbcType=VARCHAR},
       `status` = #{status,jdbcType=TINYINT},
-      update_time = #{updateTime,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
       update_user = #{updateUser,jdbcType=VARCHAR},
-      create_time = #{createTime,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
       create_user = #{createUser,jdbcType=VARCHAR}
     where oedu_permission_role_id = #{oeduPermissionRoleId,jdbcType=BIGINT}
   </update>

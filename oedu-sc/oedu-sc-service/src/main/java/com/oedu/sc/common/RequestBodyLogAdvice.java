@@ -33,9 +33,9 @@ public class RequestBodyLogAdvice implements RequestBodyAdvice {
         Method method = methodParameter.getMethod();
         ObjectMapper mapper = new ObjectMapper();
         try {
-            log.info("{}.{}:{}", method.getDeclaringClass().getSimpleName(), method.getName(), mapper.writeValueAsString(body));
+            log.info("{}.{}:param{}", method.getDeclaringClass().getSimpleName(), method.getName(), mapper.writeValueAsString(body));
         } catch (JsonProcessingException e) {
-            log.error("输出请求体解析错误",e);
+            log.error("{}.{}输出请求体解析错误{}",method.getDeclaringClass().getSimpleName(), method.getName(),e);
         }
         return body;
     }

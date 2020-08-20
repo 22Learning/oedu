@@ -1,9 +1,6 @@
 package com.oedu.sc.role.service;
 
-import com.github.pagehelper.PageHelper;
 import com.oedu.common.entities.LogicException;
-import com.oedu.common.entities.PageParamReq;
-import com.oedu.common.entities.PageParamRsp;
 import com.oedu.common.tools.StringUtils;
 import com.oedu.common.tools.UserUtil;
 import com.oedu.sc.feign.service.UserFeignService;
@@ -58,7 +55,7 @@ public class UserRoleService implements UserRoleInterface {
     public List<UserRoleDto> getEffectiveList() {
         List<UserRoleDto> effectiveList = userRoleMapper.getEffectiveList();
         Map<String, String> userMap = userFeignService.getNameByIds(effectiveList.stream().map(UserRoleDto::getUserId).collect(Collectors.toList()));
-        effectiveList.stream()
+        return effectiveList.stream()
                 .filter(user -> {
                     if (userMap.containsKey(user.getUserId())) {
                         user.setUserName(userMap.get(user.getUserId()));
@@ -67,6 +64,5 @@ public class UserRoleService implements UserRoleInterface {
                         return false;
                     }
                 }).collect(Collectors.toList());
-        return effectiveList;
     }
 }
